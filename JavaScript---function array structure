@@ -1,0 +1,128 @@
+对象属性
+（JavaScript 对象中的）名称:值对被称为属性。
+
+var person = {firstName:"Bill", lastName:"Gates", age:62, eyeColor:"blue"};
+对象方法
+对象也可以有方法。
+
+方法是在对象上执行的动作。
+
+方法以函数定义被存储在属性中。
+
+方法是作为属性来存储的函数。
+
+实例
+var person = {
+  firstName: "Bill",
+  lastName : "Gates",
+  id       : 678,
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+this 关键词
+在函数定义中，this 引用该函数的“拥有者”。
+
+在上面的例子中，this 指的是“拥有” fullName 函数的 person 对象。
+
+换言之，this.firstName 的意思是 this 对象的 firstName 属性。
+
+请在 JS this 关键词这一章学习更多有关 this 关键词的知识。
+空格和折行都是允许的。对象定义可横跨多行：
+
+实例
+var person = {
+    firstName:"Bill",
+    lastName:"Gates",
+    age:50,
+    eyeColor:"blue"
+};
+
+访问对象属性
+您能够以两种方式访问属性：
+
+objectName.propertyName
+或者
+
+objectName["propertyName"]
+访问对象方法
+您能够通过如下语法访问对象方法：
+
+objectName.methodName()
+实例
+name = person.fullName();
+如果您不使用 () 访问 fullName 方法，则将返回函数定义：
+
+实例
+name = person.fullName;
+HTML 事件是发生在 HTML 元素上的“事情”。
+
+当在 HTML 页面中使用 JavaScript 时，JavaScript 能够“应对”这些事件。
+通过 JavaScript 代码，HTML 允许您向 HTML 元素添加事件处理程序。
+
+使用单引号：
+
+<element event='一些 JavaScript'>
+使用双引号：
+
+<element event="一些 JavaScript">
+在下面的例子中，onclick 属性（以及代码）被添加到 <button> 元素：
+
+实例
+<button onclick='document.getElementById("demo").innerHTML=Date()'>现在的时间是？</button>
+<button onclick="displayDate()">现在的时间是？</button>
+
+常见的 HTML 事件
+下面是一些常见的 HTML 事件：
+
+事件	描述
+onchange	HTML 元素已被改变
+onclick	用户点击了 HTML 元素
+onmouseover	用户把鼠标移动到 HTML 元素上
+onmouseout	用户把鼠标移开 HTML 元素
+onkeydown	用户按下键盘按键
+onload	浏览器已经完成页面加载
+
+JavaScript 能够做什么？
+事件处理程序可用于处理、验证用户输入、用户动作和浏览器动作：
+
+每当页面加载时应该做的事情
+当页面被关闭时应该做的事情
+当用户点击按钮时应该被执行的动作
+当用户输入数据时应该被验证的内容
+等等
+让 JavaScript 处理事件的不同方法有很多：
+
+HTML 事件属性可执行 JavaScript 代码
+HTML 事件属性能够调用 JavaScript 函数
+您能够向 HTML 元素分配自己的事件处理函数
+您能够阻止事件被发送或被处理
+等等
+特殊字符
+由于字符串必须由引号包围，JavaScript 会误解这段字符串：
+
+var y = "中国是瓷器的故乡，因此 china 与"China（中国）"同名。"
+该字符串将被切为 "中国是瓷器的故乡，因此 china 与"。
+
+避免此问题的解决方法是，使用 \ 转义字符。
+
+反斜杠转义字符把特殊字符转换为字符串字符：
+
+代码	结果	描述
+\'	'	单引号
+\"	"	双引号
+\\	\	反斜杠
+实例
+序列 \" 在字符串中插入双引号：
+
+实例
+var x = "中国是瓷器的故乡，因此 china 与\"China（中国）\"同名。"
+其他六个 JavaScript 中有效的转义序列：
+
+代码	结果
+\b	退格键
+\f	换页
+\n	新行
+\r	回车
+\t	水平制表符
+\v	垂直制表符
