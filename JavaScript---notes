@@ -370,4 +370,21 @@ typeof undefined              // undefined
 typeof null                   // object
 null === undefined            // false
 null == undefined             // true
+typeof 运算符可返回以下两种类型之一：
 
+function
+object
+typeof 运算符把对象、数组或 null 返回 object。
+
+typeof 运算符不会把函数返回 object。
+
+实例
+typeof {name:'Bill', age:62} // 返回 "object"
+typeof [1,2,3,4]             // 返回 "object" (并非 "array"，参见下面的注释)
+typeof null                  // 返回 "object"
+typeof function myFunc(){}   // 返回 "function"
+typeof 运算符把数组返回为 "object"，因为在 JavaScript 中数组即对象。
+
+JavaScript 函数是被设计为执行特定任务的代码块。
+
+JavaScript 函数会在某代码调用它时被执行。
