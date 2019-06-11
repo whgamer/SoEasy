@@ -1,0 +1,29 @@
+jQuery vs JavaScript
+jQuery 由 John Resig 于 2006 年创建。它旨在处理浏览器不兼容性并简化 HTML DOM 操作、事件处理、动画和 Ajax。
+
+十多年来，jQuery 一直是世界上最受欢迎的 JavaScript 库。
+
+但是，在 JavaScript Version 5（2009）之后，大多数 jQuery 实用程序都可以通过几行标准 JavaScript 来解决：
+通过 id 来查找 HTML 元素
+返回 id="intro" 的元素：
+
+jQuery
+var myElement = $("#id01");
+
+通过标签名来查找 HTML 元素
+返回所有 <p> 元素：
+
+jQuery
+var myElements = $("p");
+
+通过类名来查找 HTML 元素
+返回 class="intro" 的所有元素。
+
+jQuery
+var myElements = $(".intro");
+
+通过 CSS 选择器查找 HTML 元素
+返回包含 class="intro" 的所有 <p> 元素的列表。
+
+jQuery
+var myElements = $("p.intro");
