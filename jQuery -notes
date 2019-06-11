@@ -27,3 +27,39 @@ var myElements = $(".intro");
 
 jQuery
 var myElements = $("p.intro");
+
+
+设置文本内容
+设置 HTML 元素的内部文本：
+
+jQuery
+myElement.text("Hello China!");
+
+获取文本内容
+获取 HTML 元素的内部文本：
+
+jQuery
+var myText = myElement.text();
+
+设置 HTML 内容
+设置元素的 HTML 内容：
+
+jQuery
+var myElement.html("<p>Hello World</p>");
+
+获取 HTML 内容
+获取元素的 HTML 内容：
+
+jQuery
+var content = myElement.html();
+隐藏 HTML 元素
+隐藏一个 HTML 元素：
+
+jQuery
+myElement.hide();
+
+显示 HTML 元素
+显示一个 HTML 元素：
+
+jQuery
+myElement.show();
