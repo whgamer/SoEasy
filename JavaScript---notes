@@ -404,3 +404,12 @@ JavaScript 函数会在某代码调用它时被执行。
 当 JavaScript 代码调用时
 自动的（自调用）
 您将在本教程中学到更多有关函数调用的知识。
+对象也是变量。但是对象包含很多值。
+
+这段代码把多个值（porsche, 911, white）赋给名为 car 的变量：
+
+var car = {type:"porsche", model:"911", color:"white"};
+亲自试一试
+值以名称:值对的方式来书写（名称和值由冒号分隔）。
+
+JavaScript 对象是被命名值的容器。
