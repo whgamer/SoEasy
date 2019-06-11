@@ -63,3 +63,22 @@ myElement.hide();
 
 jQuery
 myElement.show();
+
+
+样式化 HTML 元素
+更改 HTML 元素的字体尺寸：
+
+jQuery
+myElement.css("font-size","35px");
+
+删除 HTML 元素：
+
+jQuery
+$("#id").remove();
+
+
+获取父元素
+返回 HTML 元素的父元素：
+
+jQuery
+var myParent = myElement.parent();
