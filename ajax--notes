@@ -291,3 +291,73 @@ ajax PHP 实例 ------------------
 发送请求到服务器上的 PHP 文件（gethint.php）
 请注意添加到 gethint.php 的 q 参数
 str 变量保存了输入字段的内容
+
+
+AJAX 可用于同数据库进行交互式通信。
+
+AJAX Database 实例
+下面的例子演示：网页如何通过 AJAX 从数据库中读取信息：
+
+实例
+showCustomer() 函数进行如下：
+
+检查是否选取客户
+创建 XMLHttpRequest 对象
+创建当服务器响应就绪时执行的函数
+向服务器上的文件发送请求
+请注意，参数 q 被添加到 URL（带有下拉列表的内容）
+
+AJAX 服务器页面
+被以上 JavaScript 调用的服务器页面是名为 "getcustomer.asp" 的 ASP 文件。
+
+使用 PHP 或其他服务器语言能够轻松重写该服务器文件。
+<html>
+<body>
+
+<table id="demo"></table>
+
+<script>
+function loadXMLDoc() {
+   var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange =  function() {
+    if (this.readyState == 4 && this.status == 200) {
+      myFunction(this);
+     }
+  };
+  xmlhttp.open("GET", "music_list.xml", true);
+   xmlhttp.send();
+}
+function myFunction(xml) {
+  var i;
+   var xmlDoc = xml.responseXML;
+  var table="<tr><th>艺术家</th><th>曲目</th></tr>";
+   var x = xmlDoc.getElementsByTagName("TRACK");
+  for (i = 0; i <x.length;  i++) { 
+    table += "<tr><td>" +
+    x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue  +
+    "</td><td>" +
+    x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue  +
+    "</td></tr>";
+  }
+   document.getElementById("demo").innerHTML = table;
+}
+</script>
+
+</body>
+</html>
+
+function next() {
+  // 显示下一首歌曲，除非已到达最后一首
+   if (i < x.length-1) {
+    i++;
+    displayMUSIC(i);
+  }
+}
+
+function previous() {
+  // 显示上一首歌曲，除非已到达第一首
+   if (i > 0) {
+  i--;
+  displayMUSIC(i);
+  }
+} 
