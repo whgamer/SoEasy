@@ -280,3 +280,14 @@ function myFunction(xml) {
   }
    document.getElementById("demo").innerHTML = table;
 } 
+ajax PHP 实例 ------------------
+代码解释：
+首先，检查输入字段是否为空（str.length == 0），如果是，清空 txtHint 占位符的内容并退出函数。
+
+不过，如果输入字段不为空，则进行如下：
+
+创建 XMLHttpRequest 对象
+创建当服务器响应就绪时执行的函数
+发送请求到服务器上的 PHP 文件（gethint.php）
+请注意添加到 gethint.php 的 q 参数
+str 变量保存了输入字段的内容
