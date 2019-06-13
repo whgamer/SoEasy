@@ -36,3 +36,50 @@ HTML DOM 是 HTML 的标准对象模型和编程接口。它定义了：
 访问所有 HTML 元素的方法
 所有 HTML 元素的事件
 换言之：HTML DOM 是关于如何获取、更改、添加或删除 HTML 元素的标准。
+
+JavaScript - HTML DOM 方法
+DOM 简介
+DOM 文档
+HTML DOM 方法是您能够（在 HTML 元素上）执行的动作。
+
+HTML DOM 属性是您能够设置或改变的 HTML 元素的值。
+
+DOM 编程界面
+HTML DOM 能够通过 JavaScript 进行访问（也可以通过其他编程语言）。
+
+在 DOM 中，所有 HTML 元素都被定义为对象。
+
+编程界面是每个对象的属性和方法。
+
+属性是您能够获取或设置的值（就比如改变 HTML 元素的内容）。
+
+方法是您能够完成的动作（比如添加或删除 HTML 元素）。
+
+实例
+下面的例子改变了 id="demo" 的 <p> 元素的内容：
+
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "Hello World!";
+</script>
+
+</body>
+</html>
+亲自试一试
+在上面的例子中，getElementById 是方法，而 innerHTML 是属性。
+
+getElementById 方法
+访问 HTML 元素最常用的方法是使用元素的 id。
+
+在上面的例子中，getElementById 方法使用 id="demo" 来查找元素。
+
+innerHTML 属性
+获取元素内容最简单的方法是使用 innerHTML 属性。
+
+innerHTML 属性可用于获取或替换 HTML 元素的内容。
+
+innerHTML 属性可用于获取或改变任何 HTML 元素，包括 <html> 和 <body>。
