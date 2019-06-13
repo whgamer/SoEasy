@@ -83,3 +83,50 @@ innerHTML 属性
 innerHTML 属性可用于获取或替换 HTML 元素的内容。
 
 innerHTML 属性可用于获取或改变任何 HTML 元素，包括 <html> 和 <body>。
+
+HTML DOM Document 对象
+文档对象代表您的网页。
+
+如果您希望访问 HTML 页面中的任何元素，那么您总是从访问 document 对象开始。
+
+下面是一些如何使用 document 对象来访问和操作 HTML 的实例。
+
+查找 HTML 元素
+方法	描述
+document.getElementById(id)	通过元素 id 来查找元素
+document.getElementsByTagName(name)	通过标签名来查找元素
+document.getElementsByClassName(name)	通过类名来查找元素
+
+改变 HTML 元素
+方法	描述
+element.innerHTML = new html content	改变元素的 inner HTML
+element.attribute = new value	改变 HTML 元素的属性值
+element.setAttribute(attribute, value)	改变 HTML 元素的属性值
+element.style.property = new style	改变 HTML 元素的样式
+
+添加和删除元素
+方法	描述
+document.createElement(element)	创建 HTML 元素
+document.removeChild(element)	删除 HTML 元素
+document.appendChild(element)	添加 HTML 元素
+document.replaceChild(element)	替换 HTML 元素
+document.write(text)	写入 HTML 输出流
+
+添加事件处理程序
+方法	描述
+document.getElementById(id).onclick = function(){code}	向 onclick 事件添加事件处理程序
+
+本章向您讲解如何查找和访问 HTML 页面中的 HTML 元素。
+
+查找 HTML 元素
+通常，通过 JavaScript，您需要操作 HTML 元素。
+
+为了达成此目的，您需要首先找到这些元素。有好几种完成此任务的方法：
+
+通过 id 查找 HTML 元素
+通过标签名查找 HTML 元素
+通过类名查找 HTML 元素
+通过 CSS 选择器查找 HTML 元素
+通过 HTML 对象集合查找 HTML 元素
+
+
