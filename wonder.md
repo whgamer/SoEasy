@@ -85,4 +85,7 @@ n.迷因；例如语言；也称“弥因”
 KO、Ko、ko，可能代表下列事物或其縮寫：. 運動. 擊倒（Knock out）
 
 # words about wuhan coronavirus outbreak
-quarantine 
+- quarantine  noun [ U ] UK  /ˈkwɒr.ən.tiːn/ US  /ˈkwɔːr.ən.tiːn/
+Australian Prime Minister Scott Morrison said being quarantined on Christmas Island would be a condition of assisted departure.
+- asylum noun UK  /əˈsaɪ.ləm/ US  /əˈsaɪ.ləm/ 
+Evacuees will be sent to the center on Christmas Island, an Australian territory near Indonesia that has long been used to detain asylum seekers as part of an offshore-processing system that has been criticized by human-rights groups and the United Nations.
