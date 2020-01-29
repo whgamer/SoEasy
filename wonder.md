@@ -1,4 +1,4 @@
-﻿
+# Abbr
 Imfao Laughing  my fat ass off 笑掉屁股
 LMAO  "laughing my ass off" 笑死宝宝，第一次看见宝宝还以为是致敬毛爷爷呢？
 plz please 请
